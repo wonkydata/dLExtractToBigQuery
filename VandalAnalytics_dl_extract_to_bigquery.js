@@ -1,6 +1,6 @@
 // Wonkydata.com LLC
 //
-// LadyBug_dl_extract_to_bigquery.js
+// VandalAnalytics_dl_extract_to_bigquery.js
 //
 // DataLayer BigQuery Streamer - Web GTM Template
 // Sends selected dataLayer values to Cloud Run using sendPixel()
