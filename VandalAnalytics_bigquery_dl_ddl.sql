@@ -1,6 +1,6 @@
 -- Wonkydata.com LLC
 --
--- LadyBug_bigquery_dl_ddl.sql
+-- VandalAnalytics_bigquery_dl_ddl.sql
 -- - DDL to create analytics_raw/datalayer_events schema and table . 
 -- - Change the dataset name.
 -- Christopher Bridges
