@@ -1,6 +1,6 @@
 # Wonkydata.com LLC
 #
-# LadyBug_datalayer_to_bigquery.py
+# VandalAnalytics_datalayer_to_bigquery.py
 # - GCP Cloud Run function to process dataLayer captures, sent from a GTM tag template. 
 #
 # Christopher Bridges
