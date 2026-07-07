@@ -1,3 +1,12 @@
+-- Wonkydata.com LLC
+--
+-- LadyBug_datalayer_to_bigquery.py
+-- - GCP Cloud Run function to process dataLayer captures, sent from a GTM tag template. 
+--
+-- Christopher Bridges
+-- 2026-05-26
+--
+
 CREATE SCHEMA IF NOT EXISTS `bigquery-ga360-99999.analytics_raw`;
 
 CREATE TABLE IF NOT EXISTS `bigquery-ga360-99999.analytics_raw.datalayer_events`
