@@ -1,8 +1,8 @@
 -- Wonkydata.com LLC
 --
--- LadyBug_datalayer_to_bigquery.py
--- - GCP Cloud Run function to process dataLayer captures, sent from a GTM tag template. 
---
+-- LadyBug_bigquery_dl_ddl.sql
+-- - DDL to create analytics_raw/datalayer_events schema and table . 
+-- - Change the dataset name.
 -- Christopher Bridges
 -- 2026-05-26
 --
