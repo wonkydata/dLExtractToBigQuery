@@ -1,11 +1,7 @@
 # Wonkydata.com LLC
 #
 # LadyBug_datalayer_to_bigquery.py
-# - GCP Cloud Run function to process dataLayer captures, sent from a GTM tag template. 
-#
-# Christopher Bridges
-# 2026-05-26
-#
+# - GCP Cloud Run function to process full dataLayer array captures sent from GTM. 
 
 import os
 import json
@@ -61,7 +57,8 @@ def receive_datalayer(request):
         "event_name": payload.get("event_name"),
         "page_location": payload.get("page_location"),
         "page_title": payload.get("page_title"),
-        "dl_json": json.dumps(payload.get("data_layer", {})),
+        # Safely defaults to an empty list array matching the full data_layer export
+        "dl_json": json.dumps(payload.get("data_layer", [])),
         "full_payload_json": json.dumps(payload),
         "user_agent": user_agent,
         "ip_hash": ip_hash,
